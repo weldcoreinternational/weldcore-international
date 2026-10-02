@@ -44,7 +44,7 @@ class SiteTest {
         siteContent.navigation.forEach { assertTrue(html.contains("id=\"${it.section}\"")) }
         assertTrue(html.contains("src=\"./weldcore.js\""))
         assertFalse(html.contains("slideshow-controls"))
-        assertEquals(7, siteContent.products.size)
+        assertEquals(siteContent.products.size, Regex("class=\"product-number\"").findAll(html).count())
         assertEquals(5, siteContent.values.size)
     }
 }
