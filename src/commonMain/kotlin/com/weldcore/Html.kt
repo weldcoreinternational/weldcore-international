@@ -63,7 +63,6 @@ fun renderPage(site: SiteContent, year: Int): String {
     <section class="hero" id="home">
       <div class="container hero-grid"><div><p class="eyebrow">${c.legalName.uppercase().html()}</p><h1>${h.heading.html()} <span>${h.highlightedHeading.html()}</span></h1><p class="hero-copy">${h.description.html()}</p><div class="actions"><a class="button" href="#products">${t.exploreProducts.html()} <span>↗</span></a><a class="text-link" href="#contact">${t.talkToTeam.html()} →</a></div></div>
       <div class="hero-image" role="region" aria-roledescription="carousel" aria-label="${t.photoGallery.html()}">${photo(firstSlide, lazy = false)}<div class="image-caption"><span>${h.caption.html()}</span><strong>${h.tagline.html()}</strong></div></div></div>
-      <div class="container specialties">${h.specialties.joinToString("") { "<span>${it.html()}</span>" }}</div>
     </section>
     <section id="about" class="section container about"><div><p class="eyebrow">${t.welcome.html()}</p><h2>${h.tagline.html()}</h2></div><div>${site.about.mapIndexed { i, p -> """<p${if (i == site.about.lastIndex) " class=\"statement\"" else ""}>${p.html()}</p>""" }.joinToString("")}</div></section>
     <section id="products" class="section products"><div class="container"><div class="section-heading"><div><p class="eyebrow">${t.productsEyebrow.html()}</p><h2>${t.productsHeading.html()}</h2></div><a class="text-link" href="#contact">${t.discussRequirements.html()} →</a></div>

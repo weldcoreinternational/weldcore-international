@@ -25,7 +25,7 @@ val siteContent = SiteContent(
         slideIntervalMs = 4500
     ),
     about = listOf(
-        "Welcome to ${company.legalName}, a trusted partner in supplying high-quality engineering products and industrial solutions. We specialize in spot welding nozzles, Class II control transformers, springs, brass and bronze bushes, machinery, spare parts, and other engineering components.",
+        "Welcome to ${company.legalName}, a trusted partner in supplying high-quality engineering products and industrial solutions. We specialize in spot welding nozzles, Class II control transformers, Stainless Steel Constant Springs, brass and bronze bushes, machinery, spare parts, and other engineering components.",
         "With a steadfast commitment to quality, reliability, and customer satisfaction, we provide practical and cost-effective solutions tailored to the specific requirements of our customers.",
         "Our expertise and strong supplier network enable us to support a wide range of industries with dependable products and responsive service. We continuously strive to understand our customers’ technical and operational requirements and deliver solutions that meet their expectations.",
         "At ${company.legalName}, we believe in building long-term partnerships through quality products, competitive solutions, and reliable service."
